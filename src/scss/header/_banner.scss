@@ -1,15 +1,24 @@
 .banner {
   background: linear-gradient(to bottom, $beige 80%, $brown 20%);
-  height: 600px;
+  flex-grow: 1;
   text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &__container {
-    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
   }
 
   &__wrapper {
     max-width: 600px;
     margin-bottom: 100px;
+    z-index: 10;
   }
 
   &__title {
@@ -23,7 +32,7 @@
     bottom: 20px;
     width: 340px;
     height: 340px;
-    background: url("../../img/bg-tv-clock@2x.png") no-repeat center / contain;
+    background: url("../img/bg-tv-clock@2x.png") no-repeat center / contain;
   }
   &__bg-table {
     position: absolute;
@@ -31,22 +40,22 @@
     bottom: 20px;
     width: 200px;
     height: 200px;
-    background: url("../../img/table-with-cat@2x.png") no-repeat center / contain;
+    background: url("../img/table-with-cat@2x.png") no-repeat center / contain;
   }
   &__bg-books {
     position: absolute;
-    left: 0;
+    left: 80px;
     top: 20px;
     width: 210px;
     height: 48px;
-    background: url("../../img/books@2x.png") no-repeat center / contain;
+    background: url("../img/books@2x.png") no-repeat center / contain;
   }
   &__bg-tv {
     position: absolute;
-    right: 40px;
-    top: 60px;
+    right: 320px;
+    top: 20px;
     width: 190px;
     height: 32px;
-    background: url("../../img/trinity-sweet@2x.png") no-repeat center / contain;
+    background: url("../img/trinity-sweet@2x.png") no-repeat center / contain;
   }
 }
