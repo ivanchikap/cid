@@ -1,0 +1,27 @@
+.header-top {
+  min-height: 70px;
+  padding: 10px 0;
+
+  &__logo {
+    display: inline-block;
+    width: 160px;
+  }
+  &__right {
+    margin-left: 20px;
+  }
+
+  &__text {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    line-height: 1.6;
+  }
+  &__address {
+    white-space: nowrap;
+  }
+
+  &__addresses {
+    margin-left: 20px;
+  }
+}

@@ -1,0 +1,52 @@
+.banner {
+  background: linear-gradient(to bottom, $beige 80%, $brown 20%);
+  height: 600px;
+  text-align: center;
+
+  &__container {
+    height: 100%;
+  }
+
+  &__wrapper {
+    max-width: 600px;
+    margin-bottom: 100px;
+  }
+
+  &__title {
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+  &__bg-sofa {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 340px;
+    height: 340px;
+    background: url("../../img/bg-tv-clock@2x.png") no-repeat center / contain;
+  }
+  &__bg-table {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 200px;
+    height: 200px;
+    background: url("../../img/table-with-cat@2x.png") no-repeat center / contain;
+  }
+  &__bg-books {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 210px;
+    height: 48px;
+    background: url("../../img/books@2x.png") no-repeat center / contain;
+  }
+  &__bg-tv {
+    position: absolute;
+    right: 40px;
+    top: 60px;
+    width: 190px;
+    height: 32px;
+    background: url("../../img/trinity-sweet@2x.png") no-repeat center / contain;
+  }
+}
