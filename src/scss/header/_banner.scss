@@ -19,20 +19,54 @@
     max-width: 600px;
     margin-bottom: 100px;
     z-index: 10;
+
+    @include tablet {
+      margin-bottom: 200px;
+    }
+    @include mobile-large {
+      margin-bottom: 140px;
+    }
+    @include mobile {
+      margin-bottom: 0;
+    }
   }
 
   &__title {
     font-family: 'Caveat', cursive;
     font-size: 50px;
     margin-bottom: 40px;
+
+    @include mobile-large {
+      line-height: 1;
+    }
+    @include mobile {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
   }
   &__bg-sofa {
     position: absolute;
-    right: 20px;
+    right: 0;
     bottom: 20px;
     width: 340px;
     height: 340px;
     background: url("../img/bg-tv-clock@2x.png") no-repeat center / contain;
+
+    @include tablet {
+      width: 300px;
+      height: 300px;
+    }
+
+    @include mobile-large {
+      bottom: 5px;
+      width: 160px;
+      height: 160px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    @include mobile {
+      display: none;
+    }
   }
   &__bg-table {
     position: absolute;
@@ -41,6 +75,10 @@
     width: 200px;
     height: 200px;
     background: url("../img/table-with-cat@2x.png") no-repeat center / contain;
+
+    @include mobile-large {
+      display: none;
+    }
   }
   &__bg-books {
     position: absolute;
@@ -49,6 +87,10 @@
     width: 210px;
     height: 48px;
     background: url("../img/books@2x.png") no-repeat center / contain;
+
+    @include mobile-large {
+      display: none;
+    }
   }
   &__bg-tv {
     position: absolute;
@@ -57,5 +99,16 @@
     width: 190px;
     height: 32px;
     background: url("../img/trinity-sweet@2x.png") no-repeat center / contain;
+
+    @include laptop {
+      right: 110px;
+    }
+    @include mobile-large {
+      top: 5px;
+      //width: 152px;
+      //height: 26px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }

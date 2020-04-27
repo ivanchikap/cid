@@ -11,8 +11,22 @@ body {
 
 .container {
   padding: 0 15px;
-  max-width: 1200px;
+  max-width: 1170px;
   margin: 0 auto;
+
+  @include laptop {
+    max-width: 960px;
+  }
+  @include tablet {
+    max-width: 720px;
+  }
+  @include mobile-large {
+    max-width: 480px;
+  }
+  @include mobile {
+    max-width: 100%;
+    padding: 0 10px;
+  }
 }
 
 .link-decor-on-hover {
@@ -127,5 +141,9 @@ body {
       content: "\f1e6";
       margin-right: 8px;
     }
+  }
+
+  @include mobile {
+    width: 90%;
   }
 }

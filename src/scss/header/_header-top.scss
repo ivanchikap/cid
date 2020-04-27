@@ -5,6 +5,7 @@
   &__logo {
     display: inline-block;
     width: 160px;
+    flex-shrink: 0;
   }
   &__right {
     margin-left: 20px;
