@@ -1,6 +1,7 @@
 .banner {
   background: linear-gradient(to bottom, $beige 80%, $brown 20%);
   flex-grow: 1;
+  min-height: 400px;
   text-align: center;
   position: relative;
   display: flex;
@@ -17,17 +18,12 @@
 
   &__wrapper {
     max-width: 600px;
-    margin-bottom: 100px;
+    padding: 100px 10px 200px 10px;
     z-index: 10;
 
-    @include tablet {
-      margin-bottom: 200px;
-    }
-    @include mobile-large {
-      margin-bottom: 140px;
-    }
     @include mobile {
-      margin-bottom: 0;
+      padding-left: 6px;
+      padding-right: 6px;
     }
   }
 
@@ -39,9 +35,10 @@
     @include mobile-large {
       line-height: 1;
     }
+
     @include mobile {
-      font-size: 42px;
-      margin-bottom: 10px;
+      font-size: 40px;
+      margin-bottom: 28px;
     }
   }
   &__bg-sofa {
@@ -53,8 +50,8 @@
     background: url("../img/bg-tv-clock@2x.png") no-repeat center / contain;
 
     @include tablet {
-      width: 300px;
-      height: 300px;
+      width: 280px;
+      height: 280px;
     }
 
     @include mobile-large {
@@ -63,9 +60,6 @@
       height: 160px;
       left: 50%;
       transform: translateX(-50%);
-    }
-    @include mobile {
-      display: none;
     }
   }
   &__bg-table {
@@ -103,10 +97,8 @@
     @include laptop {
       right: 110px;
     }
+
     @include mobile-large {
-      top: 5px;
-      //width: 152px;
-      //height: 26px;
       left: 50%;
       transform: translateX(-50%);
     }

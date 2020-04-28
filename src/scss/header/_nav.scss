@@ -2,15 +2,19 @@
   padding: 10px 0;
   font-family: 'Montserrat', sans-serif;
   background-color: #263238;
-  min-height: 50px;
+  min-height: 74px;
   text-transform: uppercase;
   font-weight: 500;
+  transition: all .6s ease;
+
+  @include mobile-large {
+    height: 74px;
+  }
 
   &__item {
-    padding: 5px;
+    padding: 8px 16px;
     color: #ccc;
     white-space: nowrap;
-    border-bottom: 2px solid transparent;
     transition: all .2s linear;
     border-radius: 10px;
     margin: 10px;
@@ -18,15 +22,8 @@
     &:hover,
     &:focus,
     &--active {
-      border-color: #fff;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
       color: #fff;
-
-
-      @include mobile-large {
-        border-color: transparent;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-
-      }
     }
 
     @include mobile-large {
@@ -38,20 +35,26 @@
     }
   }
   &__container {
-    @include mobile-large {
-
-    }
+    margin: 20px -10px;
   }
+
   &__btn {
     display: none;
-    width: 40px;
-    height: 36px;
+    width: 48px;
+    height: 40px;
     border-radius: 4px;
+    margin: 8px 0 12px 0;
     background-color: rgba(255,255,255,0.2);
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 14px rgba(255, 255, 255, 0.3);
+      color: #fff;
+    }
 
     @include mobile-large {
       display: flex;

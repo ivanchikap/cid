@@ -15,13 +15,13 @@ body {
   margin: 0 auto;
 
   @include laptop {
-    max-width: 960px;
+    max-width: 950px;
   }
   @include tablet {
-    max-width: 720px;
+    max-width: 710px;
   }
   @include mobile-large {
-    max-width: 480px;
+    max-width: 470px;
   }
   @include mobile {
     max-width: 100%;
@@ -119,6 +119,8 @@ body {
   color: #555555;
   font-weight: 700;
   transition: all .3s ease-in;
+  text-align: center;
+  flex-shrink: 0;
 
   &:hover {
     transform: scale(1.05);
@@ -143,7 +145,7 @@ body {
     }
   }
 
-  @include mobile {
+  @include mobile-large {
     width: 90%;
   }
 }

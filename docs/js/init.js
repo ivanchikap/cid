@@ -1,16 +1,5 @@
 (function () {
-    // .header-nav навигация
-    let nav = $('.menu__list');
 
-    // .menu-btn - кнопка меню
-    $('.menu__btn').click(function() {
-        if(nav.hasClass('menu__list--active')) {
-            nav.removeClass('menu__list--active');
-        }
-        else {
-            nav.addClass('menu__list--active');
-        }
-    });
 
     // mobile sidebar start
     let sidebar = $('.main__left');

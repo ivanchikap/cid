@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/izimodal.css">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Montserrat:wght@400;500;700&family=Roboto:ital,wght@0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -17,15 +18,15 @@
 
     <header class="header">
         <section class="header-top">
-            <div class="container d-flex justify-content-between align-items-center">
+            <div class="container d-flex justify-content-between align-items-center flex-sm-column">
                 <a href="http://cid.net.ua/" class="header-top__logo">
                     <img src="img/cid-logo-with-text@2x.png" alt="cidnet-logo">
                 </a>
-                <div class="header-top__right d-flex align-items-center">
+                <div class="header-top__right d-flex align-items-center justify-content-xs-center">
                     <div class="header-top__text">
                         <p class="header-top__info">
-                            <span class="text-red">Потрібна допомога?</span>
-                            <span>Поговори з експертом:</span>
+                            <span class="header-top__info-item text-red">Потрібна допомога?</span> <br>
+                            <span class="header-top__info-item">Поговори з експертом:</span>
                         </p>
                         <div class="header-top__addresses d-flex flex-column">
                             <a class="header-top__address link-decor-on-hover" href="tel:+380 63-387-91-91">+380 63-387-91-91</a>
@@ -34,8 +35,9 @@
                         </div>
 
                     </div>
-                    <a href="#" class="btn btn--cabinet">особистий кабінет</a>
+
                 </div>
+                <a href="#" class="btn btn--cabinet">особистий кабінет</a>
             </div>
         </section>
          <!--/ header__top-->
@@ -47,16 +49,18 @@
                     <span class="nav__btn-bar"></span>
                 </div>
             </div>
-            <div class="container nav__container d-flex align-items-center justify-content-around flex-wrap">
-                <a class="nav__item" href="#">Головна</a>
-                <a class="nav__item nav__item--active" href="#">Про нас</a>
-                <a class="nav__item" href="#">Тарифи</a>
-                <a class="nav__item" href="#">Абоненту</a>
-                <a class="nav__item" href="#">Контакти</a>
-                <a class="nav__item" href="#">Цифрове телебачення</a>
-                <a class="nav__item" href="#">Цифрове телебачення</a>
-                <a class="nav__item" href="#">Цифрове телебачення</a>
+            <div class="container">
+                <div class="nav__container d-flex align-items-center justify-content-between flex-wrap">
+                    <a class="nav__item" href="#">Головна</a>
+                    <a class="nav__item" href="#">Про нас</a>
+                    <a class="nav__item nav__item--active" href="#">Тарифи</a>
+                    <a class="nav__item" href="#">Абоненту</a>
+                    <a class="nav__item" href="#">Контакти</a>
+                    <a class="nav__item" href="#">Цифрове телебачення</a>
+                    <a class="nav__item" href="#">Цифрове телебачення</a>
+                </div>
             </div>
+
 
         </nav>
         <!--/ nav.nav-->
@@ -107,5 +111,8 @@
 
     <!-- init -->
     <script src="js/init.js"></script>
+
+    <!-- nav scripts-->
+    <script src="js/nav-scripts.js"></script>
 </body>
 </html>
