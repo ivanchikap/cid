@@ -137,6 +137,8 @@ body {
     }
   }
   &--connection {
+    background-color: $blue;
+    color: #fff;
     &::before {
       font-family: 'Font Awesome 5 Free';
       font-weight: 900;

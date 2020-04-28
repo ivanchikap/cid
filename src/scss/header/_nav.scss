@@ -6,6 +6,7 @@
   text-transform: uppercase;
   font-weight: 500;
   transition: all .6s ease;
+  overflow-y: hidden;
 
   @include mobile-large {
     height: 74px;
