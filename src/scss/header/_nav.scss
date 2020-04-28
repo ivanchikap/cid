@@ -35,7 +35,11 @@
     }
   }
   &__container {
-    margin: 20px -10px;
+    margin: 0 -10px;
+
+    @include mobile-large {
+      margin: 20px -10px;
+    }
   }
 
   &__btn {
