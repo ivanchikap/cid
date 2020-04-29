@@ -25,7 +25,7 @@ body {
   }
   @include mobile {
     max-width: 100%;
-    padding: 0 10px;
+    padding: 0 15px;
   }
 }
 
@@ -108,7 +108,10 @@ body {
 }
 
 .btn {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
   padding: 10px 16px;
   border-radius: 20px;
   font-size: 14px;
@@ -122,28 +125,38 @@ body {
   text-align: center;
   flex-shrink: 0;
 
+  &::before {
+    font-family: 'Font Awesome 5 Free';
+    font-size: 18px;
+    font-weight: 900;
+    margin-right: 12px;
+  }
+
   &:hover {
     transform: scale(1.05);
     background-color: $blue;
     color: #fff;
     box-shadow: 0 0 10px rgba(24, 117, 186, .7);
   }
+
   &--cabinet {
     &::before {
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 900;
       content: "\f2f6";
-      margin-right: 8px;
     }
   }
+
   &--connection {
     background-color: $blue;
     color: #fff;
+
     &::before {
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 900;
       content: "\f1e6";
-      margin-right: 8px;
+    }
+  }
+
+  &--news {
+    &::before {
+      content: "\f35a";
     }
   }
 

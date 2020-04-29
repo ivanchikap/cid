@@ -1,0 +1,33 @@
+.decoration {
+  font-size: 18px;
+  letter-spacing: 0.36px;
+  margin: 21px 0;
+  color: $blue;
+  text-align: center;
+
+  &::before, &::after {
+    content: "---------------";
+  }
+
+  &__circle {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $blue;
+    margin: 0 15px;
+    vertical-align: middle;
+    box-shadow: 10px 0 0 $blue, -10px 0 0 $blue;
+  }
+
+  @include mobile-large {
+    .decoration {
+      margin: 18px 0;
+    }
+  }
+  @include mobile {
+    .decoration {
+      margin: 16px 0;
+    }
+  }
+}
