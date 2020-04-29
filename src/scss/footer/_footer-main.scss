@@ -97,7 +97,7 @@
   }
 
   &__text {
-    color: #b7c3c8;
+    color: $semi-white;
     font-size: 15px;
     font-weight: 400;
     line-height: 1.6;
@@ -144,7 +144,7 @@
   }
 
   &__contact {
-    color: #b7c3c8;
+    color: $semi-white;
     font-size: 14px;
     font-weight: 500;
 
@@ -173,7 +173,7 @@
   }
 
   &__default-contact {
-    color: #b7c3c8;
+    color: $semi-white;
     font-size: 15px;
     font-weight: 400;
     line-height: 1.6;
@@ -303,7 +303,7 @@
   }
 
   &__copyright {
-    color: #919699;
+    color: $semi-white;
     font-size: 15px;
     padding: 30px 0;
     border-top: 1px solid #424d53;
