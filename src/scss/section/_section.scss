@@ -6,10 +6,13 @@
     font-size: 28px;
     font-weight: 600;
     text-align: center;
-    max-width: 50%;
+    max-width: 70%;
     margin: 0 auto;
   }
   &__subtitle {
+    font-size: 16px;
+  }
+  &__subtitle, &__desc {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-weight: 600;
@@ -24,6 +27,13 @@
     @include mobile-large {
       max-width: 80%;
     }
+  }
+  &__subtitle + &__desc {
+    margin-top: 12px;
+  }
+
+  &__desc {
+    max-width: 80%;
   }
 
 }
