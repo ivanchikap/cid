@@ -1,5 +1,5 @@
 .section {
-  padding: 60px 0;
+  padding: 40px 0;
 
   &__title {
     font-family: 'Montserrat', sans-serif;
@@ -7,7 +7,13 @@
     font-weight: 600;
     text-align: center;
     max-width: 70%;
-    margin: 0 auto;
+    margin: 20px auto;
+    text-transform: uppercase;
+
+    @include mobile {
+      max-width: 100%;
+      font-size: 22px;
+    }
   }
   &__subtitle {
     font-size: 16px;
@@ -16,16 +22,18 @@
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-weight: 600;
-    color: $gray;
     line-height: 1.4;
     max-width: 50%;
-    margin: 0 auto;
+    margin: 14px auto;
 
     @include tablet {
       max-width: 60%;
     }
     @include mobile-large {
       max-width: 80%;
+    }
+    @include mobile{
+      max-width: 100%;
     }
   }
   &__subtitle + &__desc {
@@ -34,6 +42,26 @@
 
   &__desc {
     max-width: 80%;
+    text-align: left;
+  }
+  &__text, &__list {
+    font-size: 16px;
+    line-height: 1.6;
+    color: $black;
   }
 
+  &__list-item {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      display: block;
+      content: "\f105";
+      margin-right: 16px;
+      font-size: 20px;
+    }
+
+  }
 }

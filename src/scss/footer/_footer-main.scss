@@ -141,6 +141,9 @@
     &--mail::before {
       content: '\f0e0';
     }
+    &--clock::before {
+      content: '\f4fd';
+    }
   }
 
   &__contact {
@@ -232,73 +235,17 @@
     }
   }
 
-  &__newsletter {
-    margin-top: 40px;
+  &__shedule {
+    margin-top: 20px;
   }
 
-  &__newsletter-title {
+  &__shedule-title {
     color: #ffffff;
     font-size: 20px;
     margin-bottom: 18px;
 
     @include mobile {
       font-size: 18px;
-    }
-  }
-
-  &__newsletter-form {
-    position: relative;
-    width: 261px;
-
-    @include widescreen {
-      width: 251px;
-    }
-
-    @include laptop {
-      width: 261px;
-    }
-
-    @include mobile-large {
-      width: 90%;
-      margin: 0 auto;
-    }
-
-    @include mobile {
-      width: 99%;
-    }
-  }
-
-  &__newsletter-input {
-    width: 100%;
-    height: 40px;
-    padding: 14px 58px 14px 16px;
-    border: 1px solid #000000;
-    background-color: #2f3c43;
-    color: #697378;
-    font-size: 14px;
-    font-weight: 400;
-
-    @include mobile {
-      font-size: 13px;
-      padding: 10px 52px 10px 12px;
-      height: 32px;
-    }
-  }
-
-  &__newsletter-btn {
-    position: absolute;
-    width: 43px;
-    height: 38px;
-    background-color: #8bc34a;
-    top: 1px;
-    right: 1px;
-    color: #ffffff;
-    font-size: 20px;
-
-    @include mobile {
-      font-size: 18px;
-      width: 40px;
-      height: 30px;
     }
   }
 

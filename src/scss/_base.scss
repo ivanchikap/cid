@@ -44,6 +44,12 @@ body {
 .text-red {
   color: $red;
 }
+.text-blue {
+  color: $blue !important;
+}
+.fw-700 {
+  font-weight: 700;
+}
 .pos-relative {
   position: relative;
 }

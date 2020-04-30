@@ -1,6 +1,6 @@
 .tariffs {
   display: flex;
-  margin: 40px -16px;
+  margin: 40px -15px;
   flex-wrap: wrap;
   justify-content: center;
 
@@ -15,6 +15,7 @@
     @include laptop {
       flex: 0 0 33.3333%;
       max-width: 33.3333%;
+
       &:not(:nth-child(-n + 3)) {
         margin-top: 40px;
       }
@@ -22,6 +23,7 @@
     @include tablet {
       flex: 0 0 50%;
       max-width: 50%;
+
       &:not(:nth-child(-n + 2)) {
         margin-top: 40px;
       }
@@ -30,17 +32,11 @@
     @include mobile-large {
       flex: 0 0 100%;
       max-width: 320px;
+
       &:not(:nth-child(-n + 1)) {
         margin-top: 40px;
       }
     }
-    //@include mobile {
-    //  flex: 0 0 100%;
-    //  max-width: 100%;
-    //  &:not(:nth-child(-n + 1)) {
-    //    margin-top: 40px;
-    //  }
-    //}
   }
 
   &__item-col-4 {
@@ -89,6 +85,7 @@
     color: $blue;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
+    letter-spacing: -1px;
     font-weight: 500;
     text-transform: uppercase;
   }
