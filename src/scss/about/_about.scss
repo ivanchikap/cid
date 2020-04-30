@@ -1,0 +1,87 @@
+.about {
+  &__list {
+    display: flex;
+    margin: 30px -15px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    text-align: center;
+    padding: 0 15px;
+
+    &:not(:nth-child(-n + 3)) {
+      margin-top: 32px;
+    }
+
+    @include tablet{
+      flex: 0 0 50%;
+      max-width: 50%;
+
+      &:not(:nth-child(-n + 2)) {
+        margin-top: 32px;
+      }
+    }
+    @include mobile-large{
+      flex: 0 0 100%;
+      max-width: 100%;
+
+      &:not(:nth-child(-n + 1)) {
+        margin-top: 32px;
+      }
+    }
+  }
+
+  &__item-title {
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 12px;
+    white-space: nowrap;
+
+    &::before {
+      display: block;
+      color: $gray;
+      font-size: 78px;
+      margin-bottom: 14px;
+    }
+
+    &--equipment::before {
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: "\f7d9"
+    }
+    &--earth::before {
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: "\f0ac";
+    }
+    &--carry::before {
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: "\f4ce";
+    }
+    &--tv::before {
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: "\f26c";
+    }
+    &--hand::before {
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: "\f4be";
+    }
+    &--support::before {
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: "\f1e4";
+    }
+  }
+
+  &__item-desc {
+    color: $gray;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
