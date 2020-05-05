@@ -77,39 +77,37 @@
 </header>
 <!-- / header -->
 <main>
-    <section class="about section">
+    <section class="connection section">
         <div class="container">
-            <h2 class="section__title">Про нас</h2>
+            <h2 class="section__title">Заявка на підключення</h2>
             <div class="decoration">
                 <span class="decoration__circle"></span>
             </div>
-            <h3 class="section__subtitle">Компанія CiD.net – інтернет провайдер сучасного  рівня, що була створена в смт. Пісківка в 2011 році та працює і розвивається для своїх абонентів</h3>
-            <ul class="about__list">
-                <li class="about__item">
-                    <h3 class="about__item-title about__item-title--equipment">Сучасне обладнання</h3>
-                    <p class="about__item-desc">Оптична мережа сучасного рівня надає можливість забезпечувати якісну послугу та задовольняти найвибагливіших абонентів</p>
-                </li>
-                <li class="about__item">
-                    <h3 class="about__item-title about__item-title--earth">Покриття</h3>
-                    <p class="about__item-desc">доступ до мережі інтернет надається на всій території Пісківської об'єднаної територіальної громади та села Кухарі Іванківського району</p>
-                </li>
-                <li class="about__item">
-                    <h3 class="about__item-title about__item-title--carry">Безкоштовно для</h3>
-                    <p class="about__item-desc">Ми надаємо безкоштовний доступ до інтернету всім освітнім закладам Пісківської ОТГ</p>
-                </li>
-                <li class="about__item">
-                    <h3 class="about__item-title about__item-title--tv">Цифрове телебачення</h3>
-                    <p class="about__item-desc">Послуга доступу до цифрового телебачення Trinity TV та Sweet.tv від з ТОВ "ОТТ Україна"</p>
-                </li>
-                <li class="about__item">
-                    <h3 class="about__item-title about__item-title--hand">Користувачу</h3>
-                    <p class="about__item-desc"> CiD.net постійно розвивається та піклується про кожного клієнта!</p>
-                </li>
-                <li class="about__item">
-                    <h3 class="about__item-title about__item-title--support">Підтримка</h3>
-                    <p class="about__item-desc"> Ми завжди онлайн та готові допомогти відповідно до робочого графіку</p>
-                </li>
-            </ul>
+            <form action="#" class="contact-form">
+                <div class="contact-form__left">
+                    <div class="contact-form__input-group">
+                        <label class="contact-form__label" for="pib">ПІБ</label>
+                        <input class="contact-form__input" id="pib" name="name" type="text" placeholder="ПІБ *" required autofocus>
+                    </div>
+                    <div class="contact-form__input-group">
+                        <label class="contact-form__label" for="email">E-mail</label>
+                        <input class="contact-form__input" id="email" name="email" type="email" placeholder="Е-mail *" required>
+                    </div>
+                    <div class="contact-form__input-group">
+                        <label class="contact-form__label" for="phone">Телефон</label>
+                        <input class="contact-form__input" id="phone" name="phone" type="tel" placeholder="Номер телефону *" required>
+                    </div>
+                    <div class="contact-form__input-group">
+                        <label class="contact-form__label" for="addr">Адреса</label>
+                        <input class="contact-form__input" id="addr" name="address" type="text" placeholder="Адреса *" required>
+                    </div>
+                </div>
+                <div class="contact-form__right input-group">
+                    <label class="contact-form__label" for="comment">Коментар</label>
+                    <textarea id="comment" class="contact-form__textarea" name="message" placeholder="Ваш коментар *" required></textarea>
+                    <button class="btn btn--plane mx-auto w-100" type="submit">Надіслати</button>
+                </div>
+            </form>
         </div>
     </section>
     <!--/ about section-->

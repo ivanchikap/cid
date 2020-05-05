@@ -176,6 +176,14 @@ body {
     }
   }
 
+  &--plane {
+    &::before {
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 400;
+      content: "\f1d8";
+    }
+  }
+
   @include mobile-large {
     width: 90%;
   }

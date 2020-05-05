@@ -1,0 +1,66 @@
+.contact-form {
+  display: flex;
+  margin: 40px 0;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+
+  @include mobile-large {
+    flex-direction: column;
+    margin: 30px 0;
+  }
+
+  &__left {
+    flex: 0 0 60%;
+  }
+
+  &__input-group {
+    & + & {
+      margin-top: 10px;
+    }
+  }
+  &__right {
+    flex: 0 0 40%;
+    padding-left: 30px;
+
+    @include mobile-large {
+      padding-left: 0;
+      margin-top: 10px;
+    }
+  }
+
+  &__input, &__textarea {
+    width: 100%;
+    padding: 12px;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    border-bottom: 2px solid #cccccc;
+    background-color: #ffffff;
+    border-radius: 4px;
+    line-height: 1;
+
+    & + & {
+      margin-top: 24px;
+    }
+
+    &:invalid {
+      border-color: $red;
+    }
+    &::placeholder {
+      color: #bbbbbb;
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+  }
+  &__textarea {
+    min-height: 172px;
+    margin-bottom: 24px;
+  }
+}
