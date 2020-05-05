@@ -231,12 +231,12 @@ thead.sticky.on {
   background-size: 25px auto;
 }
 .channel__not{
-  background-image: url('../../img/red_not.svg');
+  background-image: url('../img/red_not.svg');
 }
 .channel__middle{
   position: relative;
   z-index: 0;
-  background-image: url('../../img/yellow_ok.svg');
+  background-image: url('../img/yellow_ok.svg');
 }
 .channel__middle:after{
   content: "*";
@@ -248,7 +248,7 @@ thead.sticky.on {
 
 }
 .channel__ok{
-  background-image: url('../../img/green_ok.svg');
+  background-image: url('../img/green_ok.svg');
 }
 .channel_info {
   padding-left: 10px;
