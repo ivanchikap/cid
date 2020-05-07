@@ -1,6 +1,4 @@
 (function () {
-
-
     // mobile sidebar start
     let sidebar = $('.main__left');
     let close = $('.main__left-close');
@@ -18,7 +16,7 @@
     });
     // mobile sidebar end
 
-    $("#prod-tabs").tabs();
+    $("#pricing-tabs").tabs();
 
     $( "#products-release__tabs" ).tabs();
 

@@ -79,14 +79,51 @@
 <!-- / header -->
     <!-- / header -->
     <main>
-        <section class="pricing-plan section">
+        <section class="pricing section" id="pricing-tabs">
             <div class="container">
+                <h2 class="section__title">Тарифи</h2>
+                <div class="decoration">
+                    <span class="decoration__circle"></span>
+                </div>
+                <ul class="pricing__services pricing__services--pricing d-flex justify-content-between flex-wrap">
+                    <li class="pricing__service text-center">
+                        <a class="pricing__service-link" href="#business">
+                            <span class="pricing__img">
+                                <img class="pricing__pic" src="img/bussiness.jpg" alt="bussiness">
+                            </span>
+                            <span class="pricing__title">Бізнес</span>
+                        </a>                       
+                    </li>
+                    <!-- / pricing__service -->
+                    <li class="pricing__service text-center">
+                        <a class="pricing__service-link" href="#private">
+                            <span class="pricing__img">
+                                <img class="pricing__pic" src="img/private-sector.png" alt="private-sector">
+                            </span>
+                            <span class="pricing__title">Приватний сектор c.Пісківка, с.Мигалки</span>
+                        </a>   
+                    </li>
+                    <!-- / pricing__service -->
+                    <li class="pricing__service text-center">
+                        <a class="pricing__service-link" href="#apartment">
+                            <span class="pricing__img">
+                                <img class="pricing__pic" src="img/bagatokvartyrni.jpg" alt="stage-house">
+                            </span>
+                            <span class="pricing__title">Багатоквартирні будинки c.Пісківка</span>
+                        </a>
+                    </li>
+                    <!-- / pricing__service -->
+                    <li class="pricing__service text-center">
+                        <a class="pricing__service-link" href="#village">
+                            <span class="pricing__img">
+                                <img class="pricing__pic" src="img/village.jpg" alt="village">
+                            </span>
+                            <span class="pricing__title">Приватний сектор с.Кухарі, с.Раска, с.Олива, с.Заруддя та с.Слобода Кухарська</span>
+                        </a>
+                     </li>
+                    <!-- / pricing__service -->
+                </ul>
                 <section id="business" class="pricing-plan__item">
-                    <div class="section__title">Для Бізнесу</div>
-                    <div class="decoration">
-                        <span class="decoration__circle"></span>
-                    </div>
-                    <p class="section__desc">Для бізнес клієнтів ми пропонуємо різноманітні варіанти надання послуги доступу до мережі Інтернет. Ми індивідуально підходимо до кажного запиту з урахуванням всіх побажань та вимог клієнта. Звертаючись до CiD.net , Ви можете бути впевнені в індивідуальному гнучкому підході та в якості наших послуг для Вас!</p>
                     <ul class="tariffs">
                         <li class="tariffs__item-col-4">
                             <article class="tariffs__item text-center">
@@ -153,10 +190,6 @@
                 </section>
                 <!-- / pricing-plan__item-->
                 <section id="private" class="pricing-plan__item">
-                    <div class="section__title">ДЛЯ ПРИВАТНОГО СЕКТОРУ</div>
-                    <div class="decoration">
-                        <span class="decoration__circle"></span>
-                    </div>
                     <ul class="tariffs">
                         <li class="tariffs__item-col-3">
                             <article class="tariffs__item text-center">
@@ -289,10 +322,6 @@
                 </section>
                 <!-- / pricing-plan__item-->
                 <section id="apartment" class="pricing-plan__item">
-                    <h2 class="section__title">ДЛЯ БАГАТОКВАРТИРНИХ БУДИНКІВ</h2>
-                    <div class="decoration">
-                        <span class="decoration__circle"></span>
-                    </div>
                     <ul class="tariffs">
                         <li class="tariffs__item-col-3">
                             <article class="tariffs__item text-center">
@@ -425,13 +454,6 @@
                 </section>
                 <!-- / pricing-plan__item-->
                 <section id="village" class="pricing-plan__item">
-                    <h2 class="section__title">Для абонентів с.РАСКА, с.КУХАРІ, с.ОЛИВА, С.ЗАРУДДЯ, с. С. КУХАРСЬКА</h2>
-                    <div class="decoration">
-                        <span class="decoration__circle"></span>
-                    </div>
-                    <h3 class="section__subtitle">До уваги абонентів с.Раска та с.Кухарі!</h3>
-                    <p class="section__desc">З 15 березня 2020 року змінються тарифи для доступу до мережі інтернет. Всі абоненти будуть автоматично переведені на тарифний план «Економний30» з абонентською платою 229гривень/місяць. Для переходу на інший тариф необхідно звернутись на телефони технічної підтримки, або скористатися системою "Особистий кабінет".</p>
-
                     <ul class="tariffs">
                         <li class="tariffs__item-col-3">
                             <article class="tariffs__item text-center">
@@ -515,140 +537,97 @@
                     <!--/ tarrifs-->
                 </section>
                 <!-- / pricing-plan__item-->
-                <aside class="pricing-plan__aside">
-                    <div class="container">
-                        <h3 class="section__title">Усі тарифні плани є безлімітними і не мають обмежень за обсягом трафіку</h3>
-                        <div class="decoration">
-                            <span class="decoration__circle"></span>
-                        </div>
-                        <h4 class="section__subtitle">
-                            Базова вартість підключення становить – 1 грн.
-                        </h4>
-                        <ul class="section__list">
-                            <li class="section__list-item">* - тариф для інвалідів першої та другої групи, участників АТО (при наявності посвідчення учасника бойових дій та підключається тільки за однією адресою або за одним, унікальним UID) та абонентів, які переключаються від інших провайдерів (термін дії тарифа «Соціальний» для абонентів, які переключаються від інших провайдерів - на протязі 90 днів, після закінчення пільгового терміну абонент буде переведений на тариф «Практичний»))</li>
-                            <li class="section__list-item">** - перехід на тариф «Преміум» узгоджується попередньо з  технічною підтримкою провайдера.</li>
-                            <li class="section__list-item">** - перехід на тариф «Преміум» узгоджується попередньо з  технічною підтримкою провайдера.</li>
-                            <li class="section__list-item">*** - плата за користування послугою не нараховується, замовлення можливе через «Особистий кабінет».</li>
-                            <li class="section__list-item">**** - програма лояльності:</li>
-                        </ul>
-                        <p class="section__text">Програма лояльності гарантує зарахування відповідного сталого бонусу при поповненні рахунку на відповідну суму згідно тарифу.</p>
-                        <h4 class="section__subtitle">Детальний опис:</h4>
-                        <ul class="section__list">
-                            <li class="section__list-item">В тарифному плані «Соціальний» - при поповненні від 150грн і вище сума зарахувань, на бонусний рахунок, дорівнює 10грн.</li>
-                            <li class="section__list-item">В тарифному плані «Базовий новий» - при поповненні від 150грн і вище сума зарахувань, на бонусний рахунок, дорівнює 10грн.</li>
-                            <li class="section__list-item">В тарифному плані «Економний» - при поповненні від 180грн і вище сума зарахувань, на бонусний рахунок, дорівнює 15грн.</li>
-                            <li class="section__list-item">В тарифному плані «Практичний» - при поповненні від 200грн і до 249грн сума зарахувань на бонусний рахунок, дорівнює 20грн та при поповненні від 250грн і вище – 25грн.</li>
-                            <li class="section__list-item">В тарифному плані «Оптимальний новий» - при поповненні від 250грн і до 299грн сума зарахувань на бонусний рахунок, дорівнює 25грн та при поповненні від 300 грн і вище – 35грн.</li>
-                            <li class="section__list-item">В тарифному плані «Преміум» - при поповненні від 300грн і вище сума зарахувань, на бонусний рахунок, дорівнює 40грн.</li>
-                        </ul>
-                        <p class="section__text">
-                            Всі бонусні кошти автоматично зараховуються на основний рахунок абонента.
-                        </p>
-                        <h3 class="section__title">Додаткові послуги, що надаються у всіх тарифах:</h3>
-                        <div class="decoration">
-                            <span class="decoration__circle"></span>
-                        </div>
-                        <p class="section__text">Вартість заміни тарифного плану з більшою абонплатою на тарифний план з меншою абонплатою становить - 50грн.</p>
-                        <p class="section__text">Вартість заміни тарифного плану з меншою абонплатою на тарифний план з більшою абонплатою – безкоштовно.</p>
-                        <h4 class="section__subtitle">Послуга «Заморозка» - сервіс можна замовити необмежену кількість разів на рік:</h4>
-                        <ul class="section__list">
-                            <li class="section__list-item">Вартість підключення - 20,00грн</li>
-                            <li class="section__list-item">Мінімальна тривалість - використання сервісу «Заморозка» - 7 днів</li>
-                            <li class="section__list-item">Вартість користування - 1,00грн/день</li>
-                        </ul>
-                    </div>
-                </aside>
             </div>
         </section>
-        <!--/ pricing-plan section-->
+        <!--/ pricing section-->
+
 
     </main>
     <!-- /main -->
 
     <footer class="footer">
-        <div class="footer__main">
-            <div class="container">
-                <div class="footer__row">
-                    <div class="footer__col-4">
-                        <h4 class="footer__title">Про компанію</h4>
-                        <p class="footer__text">Компанія CiD.net – інтернет провайдер сучасного  рівня, що була створена в смт. Пісківка в 2011 році та працює і розвивається для своїх абонентів. Оптична мережа сучасного рівня надає можливість забезпечувати якісну послугу та задовольняти найвибагливіших абонентів.</p>
-
-                    </div>
-                    <!-- / footer__col-4 -->
-                    <div class="footer__col-4">
-                        <h4 class="footer__title footer__title&#45;&#45;join">Контакти</h4>
-                        <ul class="footer__contacts-list">
-                            <li class="footer__contacts-item footer__contacts-item--address d-flex align-items-center">
-                                <a class="footer__contact link-decor-on-hover" href="#">Адреса офісу – смт.Пісківка, вул.Філіпова, буд.13Е (аптека №1), 2 поверх.</a>
-                            </li>
-                            <li class="footer__contacts-item footer__contacts-item--tel d-flex align-items-center">
-                                <a class="footer__contact link-decor-on-hover" href="tel: +380633879191">+38063-387-9191</a>
-                            </li>
-                            <li class="footer__contacts-item footer__contacts-item--tel d-flex align-items-center">
-                                <a class="footer__contact link-decor-on-hover" href="tel: +380963869191">+38096-386-9191</a>
-                            </li>
-                            <li class="footer__contacts-item  footer__contacts-item--mail d-flex align-items-center">
-                                <a class="footer__contact link-decor-on-hover" href="mailto:info@cid.net.ua">info@cid.net.ua</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- / footer__col-4 -->
-                    <div class="footer__col-4">
-                        <h4 class="footer__title footer__title--help">Тарифи</h4>
-                        <ul class="footer__default-list">
-                            <li class="footer__default-item d-flex align-items-center">
-                                <a class="footer__default-contact link-decor-on-hover" href="./pricing.html#business">Тарифи для бізнесу</a>
-                            </li>
-                            <li class="footer__default-item d-flex align-items-center">
-                                <a class="footer__default-contact link-decor-on-hover" href="./pricing.html#private">Тарифи для приватного сектору</a>
-                            </li>
-                            <li class="footer__default-item d-flex align-items-center">
-                                <a class="footer__default-contact link-decor-on-hover" href="./pricing.html#apartment">Тарифи для багатоквартирних будинків</a>
-                            </li>
-                            <li class="footer__default-item d-flex align-items-center">
-                                <a class="footer__default-contact link-decor-on-hover" href="./pricing.html#village">Тарифи для с.Кухарі, с.Раска, с.Олива, с.Заруддя, с.Слобода Кухарська</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- / footer__col-4 -->
-                    <div class="footer__col-4">
-                        <h4 class="footer__title footer__title--follow">Слідкуй за нами тут</h4>
-                        <ul class="footer__socials-list d-flex">
-                            <li class="footer__social-item">
-                                <a target="_blank" class="footer__social-contact footer__social-contact--facebook" href="https://www.facebook.com/cid.net.ua/">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li class="footer__social-item">
-                                <a target="_blank" class="footer__social-contact footer__social-contact--telegram" href="https://t.me/cidnetua">
-                                    <i class="fab fa-telegram-plane"></i>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="footer__shedule">
-                            <h5 class="footer__shedule-title">
-                                Графік роботи
-                            </h5>
-                            <ul class="footer__contacts-list">
-                                <li class="footer__contacts-item footer__contacts-item--clock d-flex align-items-center">
-                                    <span class="footer__contact">Графік роботи офісу: пн.-пт. з 09:00 до 18:00, сб.-нд. - вихідні</span>
-                                </li>
-                                <li class="footer__contacts-item footer__contacts-item--clock d-flex align-items-center">
-                                    <span class="footer__contact">Графік роботи технічної підтримки: пн.-пт. з 09:00 до 21:00, сб.-нд. – з 12:00 до 18:00</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- / footer__col-4 -->
+    <div class="footer__main">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__col-4">
+                    <h4 class="footer__title">Про компанію</h4>
+                    <p class="footer__text">Компанія CiD.net – інтернет провайдер сучасного  рівня, що була створена в смт. Пісківка в 2011 році та працює і розвивається для своїх абонентів. Оптична мережа сучасного рівня надає можливість забезпечувати якісну послугу та задовольняти найвибагливіших абонентів.</p>
                 </div>
+                <!-- / footer__col-4 -->
+                <div class="footer__col-4">
+                    <h4 class="footer__title footer__title&#45;&#45;join">Контакти</h4>
+                    <ul class="footer__contacts-list">
+                        <li class="footer__contacts-item footer__contacts-item--address d-flex align-items-center">
+                            <a class="footer__contact link-decor-on-hover" href="#">Адреса офісу – смт.Пісківка, вул.Філіпова, буд.13Е (аптека №1), 2 поверх.</a>
+                        </li>
+                        <li class="footer__contacts-item footer__contacts-item--tel d-flex align-items-center">
+                            <a class="footer__contact link-decor-on-hover" href="tel: +380633879191">+38063-387-9191</a>
+                        </li>
+                        <li class="footer__contacts-item footer__contacts-item--tel d-flex align-items-center">
+                            <a class="footer__contact link-decor-on-hover" href="tel: +380963869191">+38096-386-9191</a>
+                        </li>
+                        <li class="footer__contacts-item  footer__contacts-item--mail d-flex align-items-center">
+                            <a class="footer__contact link-decor-on-hover" href="mailto:info@cid.net.ua">info@cid.net.ua</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- / footer__col-4 -->
+                <div class="footer__col-4">
+                    <h4 class="footer__title footer__title--help">Тарифи</h4>
+                    <ul class="footer__default-list">
+                        <li class="footer__default-item d-flex align-items-center">
+                            <a class="footer__default-contact link-decor-on-hover" href="./pricing.html#business">Тарифи для бізнесу</a>
+                        </li>
+                        <li class="footer__default-item d-flex align-items-center">
+                            <a class="footer__default-contact link-decor-on-hover" href="./pricing.html#private">Тарифи для приватного сектору c.Пісківка, с.Мигалки</a>
+                        </li>
+                        <li class="footer__default-item d-flex align-items-center">
+                            <a class="footer__default-contact link-decor-on-hover" href="./pricing.html#apartment">Тарифи для багатоквартирних будинків с.Пісківка</a>
+                        </li>
+                        <li class="footer__default-item d-flex align-items-center">
+                            <a class="footer__default-contact link-decor-on-hover" href="./pricing.html#village">Тарифи для приватного сектору с.Кухарі, с.Раска, с.Олива, с.Заруддя, с.Слобода Кухарська</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- / footer__col-4 -->
+                <div class="footer__col-4">
+                    <h4 class="footer__title footer__title--follow">Слідкуй за нами тут</h4>
+                    <ul class="footer__socials-list d-flex">
+                        <li class="footer__social-item">
+                            <a target="_blank" class="footer__social-contact footer__social-contact--facebook" href="https://www.facebook.com/cid.net.ua/">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a target="_blank" class="footer__social-contact footer__social-contact--telegram" href="https://t.me/cidnetua">
+                                <i class="fab fa-telegram-plane"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__shedule">
+                        <h5 class="footer__shedule-title">
+                            Графік роботи
+                        </h5>
+                        <ul class="footer__contacts-list">
+                            <li class="footer__contacts-item footer__contacts-item--clock d-flex align-items-center">
+                                <span class="footer__contact">Графік роботи офісу: пн.-пт. з 09:00 до 18:00, сб.-нд. - вихідні</span>
+                            </li>
+                            <li class="footer__contacts-item footer__contacts-item--clock d-flex align-items-center">
+                                <span class="footer__contact">Графік роботи технічної підтримки: пн.-пт. з 09:00 до 21:00, сб.-нд. – з 12:00 до 18:00</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- / footer__col-4 -->
             </div>
         </div>
-        <div class="footer__copyright text-center">
-            <div class="container">
-                <span>© 2015 Інтернет-провайдер CID.net. Інтернет безмежних можливостей!</span>
-            </div>
+    </div>
+    <div class="footer__copyright text-center">
+        <div class="container">
+            <span>© 2015 Інтернет-провайдер CID.net. Інтернет безмежних можливостей!</span>
         </div>
-    </footer>
+    </div>
+</footer>
     <!-- / footer -->
 
     <!-- jquery -->

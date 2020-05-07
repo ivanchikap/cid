@@ -1,11 +1,23 @@
 .pricing {
   $root: &;
-  min-height: 500px;
+
   background-color: $black;
   color: #fff;
 
   &__services {
     margin: 62px -15px 0 -15px;
+
+    &--pricing {
+      margin: 22px -15px 0 -15px;
+
+      #{$root} {
+        &__img {
+          border-radius: 4px;
+          width: 86px;
+          height: 71px;
+        }
+      }
+    }
 
     @include tablet {
       margin-top: 52px;
@@ -25,6 +37,28 @@
     flex: 0 0 25%;
     width: 25%;
 
+    &.ui-tabs-active {
+      &::after {
+        font-family: 'Font Awesome 5 Free';
+        display: block;
+        font-weight: 900;
+        content: "\f0a7";
+        font-size: 20px;
+        color: #fff;
+        margin-top: 6px;
+      }
+
+      #{$root} {
+        &__img {
+          border: 2px solid $blue;
+        }
+        &__title {
+          color: $blue;
+          text-decoration: underline;
+        }
+      }
+    }
+
     @include tablet {
       flex-basis: 50%;
 
@@ -40,6 +74,20 @@
     }
   }
 
+  &__service-link {
+    &:hover, &:active {
+      #{$root} {
+        &__img {
+          border: 2px solid $blue;
+        }
+        &__title {
+          color: $blue;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
   &__img {
     width: 113px;
     height: 113px;
@@ -48,6 +96,7 @@
     display: block;
     margin: 0 auto;
     overflow: hidden;
+    transition: all .3s ease-out;
   }
 
   &__pic {
@@ -58,11 +107,13 @@
 
   &__title {
     font-family: "Montserrat", sans-serif;
-    margin: 24px 0 16px;
-    font-size: 20px;
+    margin: 14px 0 6px 0;
+    font-size: 18px;
     font-weight: 500;
     display: block;
     color: #fff;
+    min-height: 50px;
+    transition: all .3s ease-out;
   }
 
   &__description {
