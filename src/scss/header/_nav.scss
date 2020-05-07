@@ -13,12 +13,12 @@
   }
 
   &__item {
-    padding: 8px 16px;
+    padding: 8px 14px;
     color: #ccc;
     white-space: nowrap;
     transition: all .2s linear;
     border-radius: 10px;
-    margin: 10px;
+    margin: 10px 4px;
 
     &:hover,
     &:focus,
@@ -70,5 +70,25 @@
     height: 2px;
     border-radius: 1px;
     background-color: #eee;
+  }
+
+  &__btn-text {
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #ccc;
+    font-size: 1.4rem;
+    margin-left: 12px;
+
+    &::before {
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 700;
+      content: "\f0a5";
+      margin-right: 12px;
+    }
+    @include mobile-large {
+      display: block;
+    }
+
   }
 }

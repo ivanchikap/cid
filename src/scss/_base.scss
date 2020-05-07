@@ -183,6 +183,15 @@ body {
       content: "\f1d8";
     }
   }
+  &--book {
+    color: #fff;
+
+    &::before {
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 700;
+      content: "\f2b5";
+    }
+  }
 
   @include mobile-large {
     width: 90%;

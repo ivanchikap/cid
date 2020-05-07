@@ -72,7 +72,7 @@
     bottom: 20px;
     width: 340px;
     height: 340px;
-    background: url("../img/bg-tv-clock@2x.png") no-repeat center / contain;
+    background: url("../img/sofa+label@2x.png") no-repeat center / contain;
 
     @include tablet {
       width: 280px;
@@ -118,6 +118,10 @@
     width: 190px;
     height: 32px;
     background: url("../img/trinity-sweet@2x.png") no-repeat center / contain;
+    z-index: 11;
+    transition: transform .3s ease-in;
+    border-radius: 10px;
+
 
     @include laptop {
       right: 110px;
@@ -126,6 +130,9 @@
     @include mobile-large {
       left: 50%;
       transform: translateX(-50%);
+    }
+    &:hover {
+      box-shadow: 0 0 40px rgba(0, 0, 0, .2);
     }
   }
 }
