@@ -12,5 +12,6 @@
             nav.addClass('nav--active');
             nav.height(curHeight).animate({height: autoHeight}, 0)
         }
-    })
+    });
+    $("#pricing-tabs").tabs();
 })();
