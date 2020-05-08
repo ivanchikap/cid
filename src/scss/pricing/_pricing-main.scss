@@ -11,13 +11,51 @@
       margin: 22px -15px 0 -15px;
 
       #{$root} {
+        &__service-link {
+          @include mobile-large {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            text-align: left;
+          }
+        }
         &__img {
           border-radius: 4px;
           width: 86px;
           height: 71px;
+          flex-shrink: 0;
+          @include mobile-large {
+            margin: 0 20px 0 0;
+            width: 60px;
+            height: 50px;
+          }
+        }
+
+        @include tablet {
+          &__title {
+            font-size: 16px;
+            margin: 6px 0;
+          }
+          &__service:not(:nth-child(-n+2)) {
+            margin-top: 0;
+          }
+        }
+        @include mobile-large {
+          &__title {
+            min-height: auto;
+            margin: 0;
+            font-size: 14px;
+          }
+          &__service:not(:nth-child(-n+1)) {
+            margin: 6px 0;
+          }
         }
       }
     }
+
+
+
+
 
     @include tablet {
       margin-top: 52px;
@@ -38,16 +76,6 @@
     width: 25%;
 
     &.ui-tabs-active {
-      &::after {
-        font-family: 'Font Awesome 5 Free';
-        display: block;
-        font-weight: 900;
-        content: "\f0a7";
-        font-size: 20px;
-        color: #fff;
-        margin-top: 6px;
-      }
-
       #{$root} {
         &__img {
           border: 2px solid $blue;
@@ -63,13 +91,13 @@
       flex-basis: 50%;
 
       &:not(:nth-child(-n + 2)) {
-        margin-top: 40px;
+        margin-top: 30px;
       }
     }
     @include mobile-large {
       flex-basis: 100%;
       &:not(:nth-child(-n + 1)) {
-        margin-top: 40px;
+        margin-top: 20px;
       }
     }
   }

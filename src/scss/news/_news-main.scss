@@ -1,0 +1,39 @@
+.news-section {
+  background-color: $bg-gray;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px -15px;
+  }
+  &__list-item {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &:not(:nth-child(-n + 3)) {
+      margin-top: 30px;
+    }
+
+    @include tablet {
+      flex: 0 0 50%;
+      max-width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+
+      &:not(:nth-child(-n + 2)) {
+        margin-top: 30px;
+      }
+    }
+    @include mobile-large {
+      flex: 0 0 100%;
+      max-width: 380px;
+
+      &:not(:nth-child(-n + 1)) {
+        margin-top: 30px;
+      }
+    }
+  }
+}

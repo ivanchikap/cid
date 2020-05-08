@@ -4,6 +4,10 @@
   flex-wrap: wrap;
   justify-content: center;
 
+  @include tablet {
+    margin-top: 20px;
+  }
+
   &__item-col-3 {
     flex: 0 0 25%;
     max-width: 25%;
@@ -67,13 +71,13 @@
     color: #fff;
     box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    background-color: $black;
+    background-color: lighten($black, 10%);
     padding-bottom: 30px;
   }
 
   &__item-name,
   &__item-price {
-    padding: 30px 10px;
+    padding: 20px 10px;
     white-space: nowrap;
     overflow: hidden;
   }
@@ -98,7 +102,7 @@
 
   &__item-price-currency {
     vertical-align: top;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   &__item-price-value {

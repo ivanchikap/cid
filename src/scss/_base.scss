@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  color: #333;
+  color: $black;
   font-weight: 400;
   font-size: 14px;
 }
@@ -33,6 +33,10 @@ body {
   &:hover {
     text-decoration: underline !important;
   }
+}
+
+.bg-gray {
+  background-color: $bg-gray;
 }
 
 .text-white {
@@ -100,6 +104,9 @@ body {
 
 .text-center {
   text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 
 .mt-auto {
@@ -171,6 +178,7 @@ body {
   }
 
   &--news {
+    min-width: 33.3333%;
     &::before {
       content: "\f35a";
     }
