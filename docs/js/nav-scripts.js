@@ -13,5 +13,8 @@
             nav.height(curHeight).animate({height: autoHeight}, 0)
         }
     });
-    $("#pricing-tabs").tabs();
+    $("#pricing-tabs").tabs(        {
+            show: { effect: "blind", duration: 900 }
+        }
+    );
 })();

@@ -1,6 +1,8 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const gcmp = require('gulp-group-css-media-queries');
 const autoprefixer = require('gulp-autoprefixer');
+const cleanCSS = require('gulp-clean-css');
 const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync').create();
 const del = require('del');
@@ -17,8 +19,10 @@ function style() {
     // 1. Where is my scss files
     return gulp.src('src/scss/**/*.scss')
     // 2. Pass through sas compiler
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gcmp())
         .pipe(autoprefixer())
+        .pipe(cleanCSS({compatibility: 'ie10'}))
     // 3. Where do I save the compiled css?
         .pipe(gulp.dest('build/css/'))
     // 4. Stream changes to browsers
