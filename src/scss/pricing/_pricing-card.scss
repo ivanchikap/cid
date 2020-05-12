@@ -96,16 +96,17 @@
     text-transform: uppercase;
   }
   &__item-speed {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     margin-top: 8px;
     color: #fff;
+    display: block;
 
     &::before {
       font-family: 'Font Awesome 5 Free';
       font-weight: 900;
       content: "\f3fd";
-      margin-right: 10px;
+      margin-right: 14px;
       font-size: 20px;
     }
   }
@@ -122,21 +123,64 @@
   }
 
   &__item-price-value {
-    font-size: 44px;
-    line-height: 38px;
+    font-size: 36px;
+    line-height: 1;
   }
 
   &__item-price-during {
     font-size: 20px;
   }
 
+  &__item-explanation {
+    color: $semi-white;
+    opacity: 0;
+    display: inline-block;
+    padding: 2px 4px;
+    position: absolute;
+    font-size: 10px;
+    right: 0;
+    top: -22px;
+    z-index: 11;
+    border-radius: 4px;
+    border: 1px solid $semi-white;
+    transition: opacity .3s linear;
+  }
+
   &__item-list-item {
-    &--plus::after {
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 400;
-      content: '\f0fe';
-      margin-left: 8px;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      .tariffs__item-explanation {
+        opacity: 1;
+      }
     }
+
+    &::after {
+      border: 10px solid transparent;
+      cursor: pointer;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    &--plus::after {
+      color: $green;
+      content: '\f055';
+    }
+    &--money::after {
+      color: $orange;
+      content: '\f6f2';
+    }
+    &--minus:after {
+      color: $red;
+      content: '\f056';
+    }
+    &--exclamation:after {
+      color: $green;
+      content: '\f06a';
+    }
+
     & + & {
       margin-top: 25px;
     }
