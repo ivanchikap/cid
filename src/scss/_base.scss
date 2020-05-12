@@ -51,6 +51,12 @@ body {
 .text-blue {
   color: $blue !important;
 }
+.text-upper {
+  text-transform: uppercase;
+}
+.text-camel {
+  text-transform: capitalize;
+}
 .fw-700 {
   font-weight: 700;
 }

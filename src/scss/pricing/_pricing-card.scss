@@ -92,8 +92,22 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     letter-spacing: -1px;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
+  }
+  &__item-speed {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 8px;
+    color: #fff;
+
+    &::before {
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: "\f3fd";
+      margin-right: 10px;
+      font-size: 20px;
+    }
   }
 
   &__item-price {
@@ -117,6 +131,12 @@
   }
 
   &__item-list-item {
+    &--plus::after {
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 400;
+      content: '\f0fe';
+      margin-left: 8px;
+    }
     & + & {
       margin-top: 25px;
     }
