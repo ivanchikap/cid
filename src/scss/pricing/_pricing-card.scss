@@ -139,7 +139,7 @@
     position: absolute;
     font-size: 10px;
     right: 0;
-    top: -22px;
+    top: -10px;
     z-index: 11;
     border-radius: 4px;
     border: 1px solid $semi-white;
@@ -176,6 +176,18 @@
       color: $orange;
       font-weight: 400;
       content: '\f42c';
+    }
+    &--hryvnia::after {
+      margin-left: 0;
+      font-size: 16px;
+      content: '\f6f2';
+      color: $orange;
+    }
+    &--star::after {
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 400;
+      content: "\f005";
+      color: $green;
     }
     &--minus:after {
       color: $red;
