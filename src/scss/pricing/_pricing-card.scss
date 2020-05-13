@@ -149,6 +149,7 @@
   &__item-list-item {
     position: relative;
     cursor: pointer;
+    padding: 10px 0;
 
     &:hover {
       .tariffs__item-explanation {
@@ -157,11 +158,12 @@
     }
 
     &::after {
-      border: 10px solid transparent;
+      border: 6px solid transparent;
       cursor: pointer;
       font-family: 'Font Awesome 5 Free';
       font-weight: 700;
       font-size: 18px;
+      margin-left: 8px;
     }
 
     &--plus::after {
@@ -169,8 +171,11 @@
       content: '\f055';
     }
     &--money::after {
+      font-family: 'Font Awesome 5 Brands';
+      margin-left: 0;
       color: $orange;
-      content: '\f6f2';
+      font-weight: 400;
+      content: '\f42c';
     }
     &--minus:after {
       color: $red;
@@ -180,9 +185,16 @@
       color: $green;
       content: '\f06a';
     }
+    &--tv::after {
+      color: $green;
+      content: '\f26c';
+    }
+    &:last-child {
+      border-top: 2px dashed $blue;
+    }
 
     & + & {
-      margin-top: 25px;
+      margin-top: 4px;
     }
   }
 }
