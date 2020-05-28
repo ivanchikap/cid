@@ -21,7 +21,10 @@ function style() {
     // 2. Pass through sas compiler
         .pipe(sass().on('error', sass.logError))
         .pipe(gcmp())
-        .pipe(autoprefixer())
+        .pipe(autoprefixer({
+            browsers: ['last 10 versions'],
+            cascade: false
+        }))
         .pipe(cleanCSS({compatibility: 'ie10'}))
     // 3. Where do I save the compiled css?
         .pipe(gulp.dest('build/css/'))
