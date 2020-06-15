@@ -17,4 +17,18 @@
             show: { effect: "blind", duration: 900 }
         }
     );
+
+    $('.tariffs__item').click(function(e) {
+        let front = $(this).find(".tariffs__item-front");
+        let back = $(this).find(".tariffs__item-back");
+        if(e.target.classList[0] === 'tariffs__item-btn') {
+            front.css({ 'transform': 'rotateY(180deg)'});
+            back.css({ 'transform': 'rotateY(360deg)'});
+        }
+        if(e.target.classList[0] === 'tariffs__close') {
+            front.css({ 'transform': 'rotateY(0)'});
+            back.css({ 'transform': 'rotateY(180deg)'});
+
+        }
+    });
 })();
