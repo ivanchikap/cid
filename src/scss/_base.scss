@@ -30,6 +30,7 @@ body {
 }
 
 .link-decor-on-hover {
+  transition: all .3s linear;
   &:hover {
     text-decoration: underline !important;
   }
