@@ -46,7 +46,7 @@
   }
   &__text, &__list {
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.4;
     color: $black;
   }
 
@@ -62,6 +62,8 @@
       margin-right: 16px;
       font-size: 20px;
     }
-
+    & + & {
+      margin-top: 12px;
+    }
   }
 }
