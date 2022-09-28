@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Montserrat:wght@400;500;600&family=Roboto:ital,wght@0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="">
 
     <header class="header">
         <section class="header-top">
@@ -306,6 +306,45 @@
     </footer>
     <!-- / footer -->
 
+    <a class="btn btn--default btn--transparent-gray" href="#" data-modal="#modalHireMe">Hire Me</a>
+
+
+    <div class="modal" id="modal">
+        <div class="modal__dialog modal__dialog--sm">
+
+            <button type="button" class="modal__close">
+                <i class="fas fa-times-circle"></i>
+            </button>
+            <!--/modal__close-->
+
+           <div class="modal__content">
+               <div class="modal__left">
+                   <header class="modal__header">
+                       <h2 class="title">Увага акція!!!!</h2>
+                       <div class="decoration">
+                           <span class="decoration__circle"></span>
+                       </div>
+                       <div class="section__subtitle">Приведи друга - отримай бонус</div>
+                   </header>
+
+                   <div class="modal__text">
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis id provident vero! Blanditiis nemo quibusdam recusandae sapiente vitae. Dolore, nisi.</p>
+                   </div>
+
+                   <div class="modal__actions">
+                       <a href="#" class="btn">Детальніше...</a>
+                       <button class="btn closeBtn" id="closeBtn">Не цікаво</button>
+                   </div>
+               </div>
+               <div class="modal__right">
+                   <img src="img/modal-bg.jpg" alt="modal-bg">
+               </div>
+               <!-- modal__right -->
+           </div>
+        </div>
+        <!--/modal__dialog-->
+    </div>
+
     <!-- jquery -->
     <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -320,5 +359,8 @@
 
     <!-- nav scripts-->
     <script src="js/nav-scripts.js"></script>
+
+    <!-- modal-->
+    <script src="js/showModal.js"></script>
 </body>
 </html>
