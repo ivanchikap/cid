@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (sessionStorage.getItem('modalOpened')) {
         console.log(sessionStorage.getItem('modalOpened'));
     }
-    console.log(sessionStorage.getItem('modalOpened'));
+    console.log(sessionStorage.getItem('modalOpened'), typeOf(sessionStorage.getItem('modalOpened')));
     const body = document.body;
 
     const modal = document.getElementById('modal');
