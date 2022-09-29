@@ -1,4 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {   
+    
+    if (sessionStorage.getItem('modalOpened')) {
+        console.log(sessionStorage.getItem('modalOpened'));
+    }
     const body = document.body;
 
     const modal = document.getElementById('modal');
@@ -49,4 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
             body.classList.remove('no-scroll');
         }, 200);
     });
+    
+     sessionStorage.setItem('modalOpened', 'true');
 });
